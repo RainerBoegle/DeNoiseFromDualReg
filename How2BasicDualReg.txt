@@ -1,0 +1,11 @@
+To do Dual-Regression for the purpose of using the results for denoising run it like this from the SHELL (this is a shell script using FSL functions):
+
+
+dual_regression_residuals melodic_IC 1 -1 0 DualRegOutputDirName `cat .filelist`
+
+
+NB: dual_regression_residuals is my special version of Dual Regression that also outputs the residuals after ICA, i.e. all the data that was NOT in the ICA.
+    This can then also be removed by the denoising algorithm, but it is recommended that you do not remove it.
+NB2: IF YOU NEVER PLAN TO REMOVE THE RESIDUALS AND NEVER USE THAT OPTION IN THE DENOISING, THEN YOU CAN JUST USE THE "NORMAL" DUAL-REGRESSION FUNCTION "dual_regression"
+NB3: You have to make sure that "dual_regression_residuals" was made executable, before you try to run it! (chmod +x ...) 
+     You only need to do this once, or better ask you Admin to do this, (s)he would definitely like to feel that (s)he made a contribution today! ;)

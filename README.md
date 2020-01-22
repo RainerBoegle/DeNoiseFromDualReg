@@ -1,2 +1,2 @@
 # DeNoiseFromDualReg
-These are the scripts for performing denoising of fMRI data using FSL MELODIC, FSL Dual Regression and MATLAB.
+These are the tools for performing denoising of fMRI data using FSL MELODIC, FSL Dual Regression (shell script) and MATLAB scripts & functions.
